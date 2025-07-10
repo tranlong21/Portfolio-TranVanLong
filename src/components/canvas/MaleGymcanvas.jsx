@@ -13,7 +13,7 @@ const Model = () => {
         }
     });
 
-    return <primitive ref={modelRef} object={gltf.scene} scale={[0.9, 0.9, 0.9]} position={[0, 0.2, 0]} />;
+    return <primitive ref={modelRef} object={gltf.scene} scale={[0.9, 0.9, 0.9]} position={[0, 0.5, 0]} />;
 };
 
 const MaleGymcanvas = () => {

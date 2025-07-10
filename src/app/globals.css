@@ -10,11 +10,15 @@
     --accent: 254 254 91;
   }
 }
+
 @layer utilities {
-  .hover\:pause:hover {
+  .group:hover .group-spin {
     animation-play-state: paused;
   }
 
+  .group:hover .peer {
+    animation-play-state: paused;
+  }
 
   .custom-bg {
     @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm;

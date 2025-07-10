@@ -11,11 +11,6 @@ module.exports = {
     "bg-pink-500",
     "bg-purple-500",
     "pause",
-    "hover:pause",         
-    "text-accent",          
-    "hover:text-accent",    
-    "shadow-glass-inset",
-    "hover:shadow-glass-sm"
   ],
   theme: {
     extend: {

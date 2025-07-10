@@ -20,7 +20,7 @@ export default function Home() {
                 overflowX: "hidden",
             }}
         >
-            {/* <MaleGymcanvas /> */}
+            <MaleGymcanvas />   
             <Navigation />
         </div>
     );

@@ -41,7 +41,7 @@ const getIcon = (icon) => {
 const NavButton = ({ x, y, label, link, icon }) => {
     return (
         <div
-            className="absolute cursor-pointer z-10 group"
+            className="absolute cursor-pointer z-10 group hover:pause"
             style={{
                 position: "absolute",
                 left: `calc(50% + ${x}px)`,
@@ -57,7 +57,7 @@ const NavButton = ({ x, y, label, link, icon }) => {
                 aria-label={label}
                 name={label}
             >
-                <span className="relative peer w-14 h-14 p-4 hover:text-accent">
+                <span className="relative peer w-14 h-14 p-4 animate-spin-slow-reverse group-hover:pause hover:text-accent">
                     {getIcon(icon)}
                     <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />
                     <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2
