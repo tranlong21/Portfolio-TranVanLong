@@ -1,17 +1,16 @@
 import React from 'react';
-import MaleGymcanvas from './canvas/MaleGymcanvas';
-import Navigation from './navigations/nav.jsx';
 import { useNavigate } from 'react-router-dom';
-import FireFliesBackground from './FireFliesBackground';
+import HomeButton from '../components/share/HomeBtn';
+import ProjectList from '../components/projects/ProjectList';
 
-export default function Home() {
+export default function Projects() {
     const navigate = useNavigate();
 
     return (
         <div
             className="w-full h-screen"
             style={{
-                backgroundColor: "#000",
+                backgroundColor: "#fff",
                 backgroundImage: `url('/background/home-background.png')`,
                 width: "100vw",
                 minHeight: "100vh",
@@ -22,9 +21,8 @@ export default function Home() {
                 overflowX: "hidden",
             }}
         >
-            <MaleGymcanvas />   
-            <Navigation />
-            <FireFliesBackground />
+            {/* <HomeButton /> */}
+            <ProjectList />
         </div>
     );
 }

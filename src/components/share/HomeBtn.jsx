@@ -1,7 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import {
+    FaHome,
+} from "react-icons/fa";
 
+const getIcon = (icon) => {
+    const map = {
+        home: <FaHome />,
+    };
+
+    return (
+        <span className="w-full h-full text-2xl flex items-center justify-center">
+            {map[icon] || <FaHome />}
+        </span>
+    );
+};
 const HomeButton = ({ x, y, label, link, icon }) => {
     return (
         <Link
@@ -12,14 +26,7 @@ const HomeButton = ({ x, y, label, link, icon }) => {
             name={"Home"}
         >
             <span className="relative peer w-14 h-14 p-4 hover:text-accent">
-                <img
-                    src={`/icons/home.png`}
-                    alt={icon}
-                    className="w-full h-auto"
-                    style={{
-                        filter: "invert(1)",
-                    }}
-                />
+                {getIcon(icon)}
                 <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />
                 <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2
                     bg-background text-foreground rounded-md text-sm shadow-lg whitespace-nowrap z-20"

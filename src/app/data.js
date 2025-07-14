@@ -19,17 +19,17 @@ Websites:
 export const projectsData = [
   {
     id: 1,
-    name: "EcoTracker",
-    description: "Track your carbon footprint",
-    date: "2022-08-15",
-    demoLink: "https://ecotracker.example.com",
+    name: "GYMLT",
+    description: "Web hướng dẫn tập gym + bán hàng",
+    date: "2025-02",
+    demoLink: "https://github.com/tranlong21/web-gym-fe.git",
   },
   {
     id: 2,
-    name: "ArtGallery Online",
-    description: "Digital art showcase platform",
-    date: "2022-06-20",
-    demoLink: "https://artgalleryonline.example.com",
+    name: "Profile TranVanLong",
+    description: "Profile cá nhân",
+    date: "2025-06-20",
+    demoLink: "https://github.com/tranlong21/Profile-TranVanLong.git",
   },
   {
     id: 3,
@@ -96,7 +96,7 @@ export const BtnList = [
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://github.com/tranlong21",
     icon: "github",
     newTab: true,
   },
