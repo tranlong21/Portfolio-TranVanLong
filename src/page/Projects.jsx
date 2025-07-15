@@ -10,8 +10,7 @@ export default function Projects() {
         <div
             className="w-full h-screen"
             style={{
-                backgroundColor: "#fff",
-                backgroundImage: `url('/background/home-background.png')`,
+                backgroundImage: `url('/background/projects-background.png')`,
                 width: "100vw",
                 minHeight: "100vh",
                 backgroundSize: "cover",
@@ -21,7 +20,7 @@ export default function Projects() {
                 overflowX: "hidden",
             }}
         >
-            {/* <HomeButton /> */}
+            <HomeButton />
             <ProjectList />
         </div>
     );

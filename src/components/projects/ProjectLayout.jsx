@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProjectLayout = ({ name, description, date, demoLink }) => {
     return (
-        <div
+        <Link
+            to={demoLink}
+            target={"_blank"}
             className="text-sm md:text-base flex  items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
         >
             <div
@@ -15,7 +18,7 @@ const ProjectLayout = ({ name, description, date, demoLink }) => {
             <p className="text-muted sm:text-foreground">
                 {new Date(date).toDateString()}
             </p>
-        </div>
+        </Link>
     )
 }
 

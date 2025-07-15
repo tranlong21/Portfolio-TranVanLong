@@ -93,7 +93,12 @@ export const BtnList = [
   { label: "Home", link: "/", icon: "home", newTab: false },
   { label: "About", link: "/about", icon: "about", newTab: false },
   { label: "Projects", link: "/projects", icon: "projects", newTab: false },
-  { label: "Contact", link: "/contact", icon: "contact", newTab: false },
+  {
+    label: "Contact",
+    link: "https://zalo.me/0702050435",
+    icon: "contact",
+    newTab: true
+  },
   {
     label: "Github",
     link: "https://github.com/tranlong21",
@@ -102,14 +107,14 @@ export const BtnList = [
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/tranlong21",
     icon: "linkedin",
     newTab: true,
   },
   {
-    label: "X",
-    link: "https://www.x.com/code_bucks",
-    icon: "twitter",
+    label: "FaceBook",
+    link: "https://www.facebook.com/tran.long.200366",
+    icon: "facebook",
     newTab: true,
   },
   {

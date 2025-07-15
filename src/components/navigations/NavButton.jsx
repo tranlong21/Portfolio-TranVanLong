@@ -7,7 +7,7 @@ import {
     FaEnvelope,
     FaGithub,
     FaLinkedin,
-    FaTwitter,
+    FaFacebook ,
     FaFileAlt,
 } from "react-icons/fa";
 
@@ -19,16 +19,8 @@ const getIcon = (icon) => {
         contact: <FaEnvelope />,
         github: <FaGithub />,
         linkedin: <FaLinkedin />,
-        twitter: <FaTwitter />,
+        facebook: <FaFacebook  />,
         resume: <FaFileAlt />,
-        chest: <FaHome />,
-        back: <FaInfoCircle />,
-        shoulder: <FaProjectDiagram />,
-        arm: <FaEnvelope />,
-        leg: <FaGithub />,
-        belly: <FaLinkedin />,
-        shop: <FaTwitter />,
-        profile: <FaFileAlt />,
     };
 
     return (
@@ -52,8 +44,7 @@ const NavButton = ({ x, y, label, link, icon }) => {
             <Link
                 to={link}
                 className="text-foreground rounded-full flex items-center justify-center 
-                bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px]
-                shadow-glass-inset hover:shadow-glass-sm"
+                custom-bg"
                 aria-label={label}
                 name={label}
             >
