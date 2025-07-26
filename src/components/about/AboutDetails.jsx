@@ -114,7 +114,7 @@ const AboutDetails = () => {
                         Sở thích cá nhân
                     </h2>
                     <p className="font-light">
-                        Ngoài lập trình, tôi thích chạy bộ, đọc sách công nghệ và khám phá những ý tưởng UI/UX mới. Tôi cũng yêu thích làm việc nhóm và chia sẻ kiến thức với mọi người.
+                        Ngoài lập trình, tôi thích nghe nhạc, xem phim và khám phá những ý tưởng UI/UX mới. Tôi cũng yêu thích làm việc nhóm và chia sẻ kiến thức với mọi người.
                     </p>
                 </ItemLayout>
 
