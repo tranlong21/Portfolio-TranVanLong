@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import HomeButton from '../components/share/HomeBtn';
+import HomeButton from '../components/share/HomeButton';
 import ProjectList from '../components/projects/ProjectList';
 import MushroomCanvas from '../components/canvas/MushroomCanvas';
 import FireFliesBackground from '../components/share/FireFliesBackground';

@@ -9,6 +9,7 @@ const Model = () => {
 
     useFrame(() => {
         if (modelRef.current) {
+            
             modelRef.current.rotation.y += 0.01;
         }
     });
@@ -33,7 +34,7 @@ const MushroomCanvas = () => {
                 <ambientLight intensity={1.2} />
                 <directionalLight intensity={1.2} position={[5, 10, 5]} />
 
-                <OrbitControls target={[0, 1.3, 0]} enablePan={false} enableZoom={false} />
+                <OrbitControls target={[0, 1.3, 0]} enablePan={false} enableRotate={false}  enableZoom={false} />
 
                 <Suspense fallback={null}>
                     <Model />

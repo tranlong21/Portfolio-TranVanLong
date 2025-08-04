@@ -38,7 +38,7 @@ export const BtnList = [
   { label: "About", link: "/about", icon: "about", newTab: false },
   { label: "Projects", link: "/projects", icon: "projects", newTab: false },
   {
-    label: "Contact",
+    label: "Zalo",
     link: "https://zalo.me/0702050435",
     icon: "contact",
     newTab: true
@@ -63,7 +63,7 @@ export const BtnList = [
   },
   {
     label: "Feedback",
-    link: "/feedback.pdf",
+    link: "/feedback",
     icon: "feedback",
     newTab: true,
   },

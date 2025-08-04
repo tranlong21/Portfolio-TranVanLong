@@ -5,6 +5,7 @@ import './app/globals.css';
 import Home from "./page/Home";
 import Projects from "./page/Projects";
 import About from "./page/About";
+import Feedback from "./page/Feedback";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/feedback" element={<Feedback />} />
       </Routes>
     </HashRouter>
   );

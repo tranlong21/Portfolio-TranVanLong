@@ -34,3 +34,15 @@
     transform: translate(100px, 100px);
   }
 }
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0 1000px rgba(27, 27, 27, 0.2) inset !important; 
+  -webkit-text-fill-color: rgb(225, 225, 225) !important; 
+  transition: background-color 5000s ease-in-out 0s;
+  border: 1px solid rgba(254, 254, 91, 0.3); 
+}
+

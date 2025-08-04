@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeButton from '../components/share/HomeBtn';
+import HomeButton from '../components/share/HomeButton';
 import AboutDetails from '../components/about/AboutDetails';
 import TranVanLongCanvas from '../components/canvas/TranVanLongCanvas';
 import FireFliesBackground from '../components/share/FireFliesBackground';
@@ -16,6 +16,7 @@ export default function About() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed", 
                 position: "relative",
                 overflowX: "hidden",
             }}
