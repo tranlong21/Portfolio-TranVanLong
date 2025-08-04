@@ -9,7 +9,8 @@ export default function About() {
         <div
             className="w-full min-h-screen overflow-x-hidden"
             style={{
-                backgroundImage: `url('/background/projects-background.png')`,
+                backgroundImage: `url('${import.meta.env.BASE_URL}background/about-background.png')`,
+
                 width: "100vw",
                 minHeight: "100vh",
                 backgroundSize: "cover",

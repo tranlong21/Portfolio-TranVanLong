@@ -7,8 +7,8 @@ import {
     FaEnvelope,
     FaGithub,
     FaLinkedin,
-    FaFacebook ,
-    FaFileAlt,
+    FaFacebook, 
+    FaCommentDots, // Thêm icon feedback
 } from "react-icons/fa";
 
 const getIcon = (icon) => {
@@ -19,8 +19,8 @@ const getIcon = (icon) => {
         contact: <FaEnvelope />,
         github: <FaGithub />,
         linkedin: <FaLinkedin />,
-        facebook: <FaFacebook  />,
-        resume: <FaFileAlt />,
+        facebook: <FaFacebook />,
+        feedback: <FaCommentDots />, // Đã thêm icon feedback
     };
 
     return (
@@ -29,6 +29,7 @@ const getIcon = (icon) => {
         </span>
     );
 };
+
 
 const NavButton = ({ x, y, label, link, icon }) => {
     return (

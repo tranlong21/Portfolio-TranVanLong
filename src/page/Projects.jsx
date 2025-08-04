@@ -12,7 +12,7 @@ export default function Projects() {
         <div
             className="w-full h-screen"
             style={{
-                backgroundImage: `url('/background/home-background.png')`,
+                backgroundImage: `url('${import.meta.env.BASE_URL}background/projects-background.png')`,
                 width: "100vw",
                 minHeight: "100vh",
                 backgroundSize: "cover",

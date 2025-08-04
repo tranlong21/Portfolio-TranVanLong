@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; // thay BrowserRouter bằng HashRouter
 import './app/globals.css';
 
 import Home from "./page/Home";
@@ -8,13 +8,13 @@ import About from "./page/About";
 
 function App() {
   return (
-    <BrowserRouter> 
+    <HashRouter> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

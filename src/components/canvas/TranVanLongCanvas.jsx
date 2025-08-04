@@ -5,7 +5,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 
 const Model = () => {
-    const gltf = useLoader(GLTFLoader, '/models/TranVanLong.glb');
+    const gltf = useLoader(GLTFLoader, `${import.meta.env.BASE_URL}models/TranVanLong.glb`);
     const modelRef = useRef();
 
     useFrame((state) => {

@@ -14,7 +14,7 @@ const AboutDetails = () => {
             <div className='grid grid-cols-12 grid-rows-2 gap-8 w-full'>
                 <ItemLayout className={'col-span-3 row-span-2'}>
                     <img
-                        src="/background/TranVanLong.png"
+                        src={`${import.meta.env.BASE_URL}background/TranVanLong.png`}
                         alt="Tran Long"
                         className="w-auto h-60 object-cover"
                     />
