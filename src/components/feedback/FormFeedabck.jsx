@@ -2,6 +2,23 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'sonner'
+import { motion, scale } from "framer-motion"
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.2
+    }
+  }
+}
+
+const item = {
+  hidden: { scale: 0 },
+  show: { scale: 1 }
+}
 
 function App() {
   return (
@@ -33,10 +50,10 @@ const FormFeedabck = () => {
         }
       )
       .then(() => {
-        toast.success("Cảm ơn đã góp ý!", {id: toastid});
+        toast.success("Cảm ơn đã góp ý!", { id: toastid });
       })
       .catch((error) => {
-        toast.error("Góp ý thất bại, hãy thử lại.",{id: toastid})
+        toast.error("Góp ý thất bại, hãy thử lại.", { id: toastid })
       });
   };
 
@@ -52,19 +69,23 @@ const FormFeedabck = () => {
 
   return (
     <>
-    <Toaster richColors={true} />
-    <article className="relative w-full flex flex-col items-center justify-center space-y-8">
+      <Toaster richColors={true} />
+      <article className="relative w-full flex flex-col items-center justify-center space-y-8">
         <div className="flex flex-col items-center justify-center space-y-8">
           <h1 className="text-accent font-semibold text-center text-4xl capitalize">
             Xin chào! Tôi là Trần Văn Long.
           </h1>
           <p className="text-center font-light text-foreground">
-            Tôi rất mong nhận được những góp ý chân thành từ bạn – dù là lời khen tích cực hay những lời nhận xét thẳng thắn. Mỗi góp ý đều là một món quà quý giá, giúp tôi có cơ hội nhìn lại bản thân, 
+            Tôi rất mong nhận được những góp ý chân thành từ bạn – dù là lời khen tích cực hay những lời nhận xét thẳng thắn. Mỗi góp ý đều là một món quà quý giá, giúp tôi có cơ hội nhìn lại bản thân,
             nhận ra điểm mạnh để phát huy và những điểm chưa tốt để thay đổi. Tôi tin rằng, với sự hỗ trợ và đồng hành từ bạn, tôi có thể hoàn thiện mình hơn mỗi ngày và trở thành phiên bản tốt nhất của chính mình.
           </p>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="max-w-md w-full flex flex-col items-center justify-center space-y-4">
-          <input
+        <motion.form
+          variants={container}
+          initial="hidden"
+          animate="show"
+          onSubmit={handleSubmit(onSubmit)} className="max-w-md w-full flex flex-col items-center justify-center space-y-4">
+          <motion.input
             type="text"
             placeholder="Họ và Tên"
             {...register("name", {
@@ -81,28 +102,30 @@ const FormFeedabck = () => {
               {errors.name.message}
             </span>
           )}
-          <input
+          <motion.input
+          variants={item}
             type="email"
             placeholder="Email"
             {...register("email", { required: true })}
             className="w-full p-2 rounded-md shadow-lg text-white bg-background/20 border border-accent/30 backdrop-blur-[6px] focus:bg-background/20 focus:outline-none focus:ring-2 focus:ring-accent/50"
           />
-          <textarea
+          <motion.textarea
+          variants={item}
             placeholder="Góp ý của bạn"
             {...register("message", { required: true })}
             className="w-full min-h-[120px] max-h-[300px] p-2 rounded-md shadow-lg text-white bg-background/20 border border-accent/30 backdrop-blur-[6px] focus:bg-background/20 focus:outline-none focus:ring-2 focus:ring-accent/50"
           />
-          <input
+          <motion.input
             value="Góp ý ngay"
             type="submit"
             className="px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid
           hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50
           cursor-pointer capitalize"
           />
-        </form>
+        </motion.form>
       </article>
     </>
-      
+
   );
 };
 

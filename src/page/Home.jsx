@@ -1,12 +1,9 @@
 import React from 'react';
 import HelloWorldcanvas from '../components/canvas/HelloWorldcanvas';
 import Navigation from '../components/navigations/Nav';
-import { useNavigate } from 'react-router-dom';
 import MatrixRain from '../components/share/MatrixRain';
 
 export default function Home() {
-    const navigate = useNavigate();
-
     return (
         <div className="w-full h-screen relative overflow-x-hidden">
             {/* Hiệu ứng nền */}
@@ -14,13 +11,16 @@ export default function Home() {
                 <MatrixRain />
             </div>
 
-            {/* Nội dung */}
-            <div className="absolute inset-0 z-5">
+            {/* Canvas */}
+            <div className="absolute inset-0 z-10">
                 <HelloWorldcanvas />
-                </div>
-            <div className="relative z-10">
+            </div>
+
+            {/* Navigation */}
+            <div className="absolute inset-0 z-40">
                 <Navigation />
             </div>
         </div>
     );
 }
+

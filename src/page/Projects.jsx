@@ -27,8 +27,8 @@ export default function Projects() {
             </div>
             <div className="w-full h-full  ">
 
-                <HomeButton />
                 <ProjectList />
+                <HomeButton />
                 <FireFliesBackground />
             </div>
         </div>

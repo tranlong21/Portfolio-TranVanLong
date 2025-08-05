@@ -16,19 +16,30 @@ export default function About() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed", 
+                backgroundAttachment: "fixed",
                 position: "relative",
                 overflowX: "hidden",
             }}
         >
-            <div className="w-full h-full  ">
-                <TranVanLongCanvas />
+            <div
+                className="relative w-full h-3/4 sm:h-screen flex flex-col items-center justify-center z-20"
+            >
+                {/* Model */}
+                <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <TranVanLongCanvas />
+                </div>
+
+                {/* Text */}
+                <div className="absolute flex flex-col items-center text-center top-[80%] left-1/2 -translate-y-1/2 -translate-x-1/2">
+                    <h1 className="font-bold text-8xl text-accent">Trần Văn Long</h1>
+                    <p className="font-light text-foreground text-xl">
+                        Kéo xuống và đọc những thông tin bên dưới để hiểu rõ về tôi.
+                    </p>
+                </div>
             </div>
-            <div className="w-full h-full">
-                <HomeButton />
-                <AboutDetails />
-                <FireFliesBackground />
-            </div>
+            <HomeButton />
+            <AboutDetails />
+            <FireFliesBackground />
         </div>
     );
 }

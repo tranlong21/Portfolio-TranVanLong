@@ -65,7 +65,7 @@ export const BtnList = [
     label: "Feedback",
     link: "/feedback",
     icon: "feedback",
-    newTab: true,
+    newTab: false,
   },
 ];
 
