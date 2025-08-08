@@ -27,11 +27,16 @@ const Navigaton = () => {
       ? parseFloat(getComputedStyle(document.documentElement).fontSize)
       : 0;
 
-  const radius = isLarge
-    ? 20 * vw - rem
-    : isMedium
-      ? 30 * vw - rem
-      : 40 * vw - rem;
+  let radius;
+
+if (isLarge) {
+  radius = 20 * vw - rem;       // Desktop
+} else if (isMedium) {
+  radius = 35 * vw - rem;       // iPad / Tablet → to hơn
+} else {
+  radius = 40 * vw - rem;       // Mobile
+}
+
 
   const count = BtnList.length;
 
