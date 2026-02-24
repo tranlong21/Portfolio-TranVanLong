@@ -30,6 +30,20 @@ export const projectsData = [
     description: "Profile cá nhân",
     date: "2025-06-20",
     demoLink: "https://github.com/tranlong21/Profile-TranVanLong.git",
+  },
+  {
+    id: 3,
+    name: "Jobook",
+    description: "Nền tảng kết nối việc làm",
+    date: "2025-06-20",
+    demoLink: "https://github.com/anvinh2812/JoBook.git",
+  },
+  {
+    id: 4,
+    name: "VRPLUS",
+    description: "Hệ thống web VR",
+    date: "2025-06-20",
+    demoLink: "https://github.com/tranlong21/ProjectVR.git",
   }
 ];
 
